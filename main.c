@@ -23,12 +23,8 @@ static GXRModeObj *rmode = NULL;
 void init() {  
 	VIDEO_Init();	
 	WPAD_Init();
-	ISFS_Initialize();
-
-	
-	rmode = VIDEO_GetPreferredMode(NULL);
-
-	
+	ISFS_Initialize();	
+	rmode = VIDEO_GetPreferredMode(NULL);	
 	xfb = MEM_K0_TO_K1(SYS_AllocateFramebuffer(rmode));
 	console_init(xfb,20,20,rmode->fbWidth,rmode->xfbHeight,rmode->fbWidth*VI_DISPLAY_PIX_SZ);
 	VIDEO_Configure(rmode);
