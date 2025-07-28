@@ -37,6 +37,8 @@ void init() {
 }
 
 int main(int argc, char **argv) {
+	// Forgot to init!
+	init();
 	int conX, conY;
 	CON_GetMetrics(&conX, &conY);
 	
